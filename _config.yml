@@ -1,35 +1,20 @@
 # --- Basic options --- #
 
 # Name of website
-title: My website
+title: Chaos Computing
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: wer kämpft kann verlieren - wer nicht kämpft hat schon verloren
 
 # Your name to show in the footer
-author: Some Person
+author: Christian Gmeiner
 
-# --- List of links in the navigation bar --- #
+# --- Navigation bar options --- #
 
+# List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "http://deanattali.com"
-
-# --- Local development options ---
-
-# If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
-# ***If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
-
-# url is the the website domain URL without a trailing slash
-#url: "https://example.com"
-
-# baseurl should be an empty string
-#baseurl: ""
-
-# --- Logo --- #
+  Bugfixing Service: "bugfixing"
+  Impressum: "impressum"
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
@@ -45,27 +30,26 @@ round-avatar: true
 
 # --- Footer options --- #
 
-# Select the social network links that you want to show in the footer.
-# Uncomment the links you want to show and add your information to each one.
-# If you don't want to show a link to an RSS feed, set rss to "false".
+# Change all these values or delete the ones you don't want.
+# Important: you must keep the "name" parameter, everything else you can remove
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  rss: true
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
+  email: "christian.gmeiner@gmail.com"
+  facebook: yourname  # eg. daattali
+  github: austriancoder    # eg. daattali
+  twitter: yourname   # eg. daattali
+  reddit: yourname    # eg. daattali
+  google-plus: +christiangmeiner   # eg. +DeanAttali or 109424658772469020925
+  linkedin: yourname  # eg. daattali
+  xing: yourname      # eg. daattali
+  stackoverflow: yourlink  # eg. "3943160/daattali"
+  snapchat: yourname  # eg. daattali
+  instagram: yourname # eg. daattali
+  youtube: yourlink   # eg. user/daattali or channel/daattali
+  spotify: yourname   # eg. daattali
+  telephone: yourphone   # eg. +14159998888
+  steam: yourname     # eg. daattali
+  twitch: yourname    # eg. daattali
+  yelp: yourname      # eg. daattali
 
 # --- General options --- #
 
@@ -77,34 +61,13 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "christian-gmeiner.info"  # eg. "deanattali.com/beautiful-jekyll"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
 
 # Excerpt Word Length - Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
-
-# --- Colours / background image --- #
-
-# Personalize the colors in your website. Colour values can be any valid CSS colour
-
-navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
-navbar-children-col: "#F5F5F5"
-page-col: "#FFFFFF"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#F5F5F5"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-
-# Alternatively, the navbar, footer, and page background can be set to use background images
-# instead of colour
-
-#navbar-img: "/img/bgimage.png"
-#footer-img: "/img/bgimage.png"
-#page-img: "/img/bgimage.png"
 
 # --- Web Statistics Section --- #
 
