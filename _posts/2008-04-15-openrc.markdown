@@ -1,0 +1,10 @@
+---
+layout: post
+title: OpenRC
+date: '2008-04-15 13:51:13'
+---
+
+
+Nachdem ich nun meinen Arbeitsrechner neu aufgesetzt habe, dachte ich mir, dass gleich auch noch OpenRC probieren könnte. Mit Hilfe des [Migration Guide](http://www.gentoo.org/doc/en/openrc-migration.xml) verlief die Umstellung ohne Probleme und der erste Boot mit OpenRC wurde ausgeführt. Und ich bin sehr erstaunt wie einfach alles ging und das gute an der ganzen Sache… das System startet schneller 🙂
+
+Nachdem mein Arbeitsrechner nun wieder online ist, werde ich weiter an meinen Projekten arbeiten und hin und wider mal blogen.

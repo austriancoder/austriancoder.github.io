@@ -1,0 +1,23 @@
+---
+layout: post
+title: Mesa meets GC2000
+date: '2014-02-15 20:18:25'
+tags:
+- gpu
+- mesa
+- etnaviv
+---
+
+
+Here is the first result of running [mesatest_gles ](https://github.com/laanwj/mesatest_gles)on [mesa&etna](https://github.com/austriancoder/mesa):
+
+Following tests are showing good visual results compared to swrast:
+
+- Hello_Triangle/CH02_HelloTriangle
+- Simple_VertexShader/CH08_SimpleVertexShader
+- CubeVBO/cube_vbo
+- ParticleSystem/CH13_ParticleSystem
+- Viewports/viewports
+
+All other are visual corrupted or segfault. So there is still some work done to get all demos
+ up and running.

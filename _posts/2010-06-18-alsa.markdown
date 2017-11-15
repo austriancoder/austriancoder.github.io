@@ -1,0 +1,12 @@
+---
+layout: post
+title: alsa
+date: '2010-06-18 22:33:45'
+tags:
+- alsa
+---
+
+
+Hin und wieder finde ich ein wenig Zeit um am Plugin zu arbeiten. Audio und Video Sync scheint nun recht gut zu funktioneren (noch nicht commited), doch leider bekomme ich oft noch XRuns in alsa. Da ich den oss Support aus dem Plugin entfernen will, ist es sicherlich keine schlechte Idee, den alsa Ausgabe-Treiber zu fixen.
+
+Zum Glück gibt es die Möglichkeit die XRuns zu debugen – siehe [hier](http://www.alsa-project.org/main/index.php/XRUN_Debug). Ich werde sicherlich noch ein paar nette Studen mit alsa verbringen.

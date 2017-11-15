@@ -1,0 +1,17 @@
+---
+layout: post
+title: vdr -h
+date: '2008-03-29 16:55:10'
+---
+
+
+Usage: vdr [OPTIONS]
+
+**…**
+
+Plugins: vdr -P”name [OPTIONS]”
+
+dxr3 (0.3.0_rc1) – em8300 based output device
+
+-v {pal/ntsc}                –videosystem {pal/ntsc}                 video system to use
+ default: pal

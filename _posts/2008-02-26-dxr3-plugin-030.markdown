@@ -1,0 +1,50 @@
+---
+layout: post
+title: Dxr3-Plugin 0.3.0
+date: '2008-02-26 15:49:14'
+---
+
+
+Nachdem ich schon seit eingier Zeit an einer neuen Version des VDR Plugins abreite, habe ich die letzten Tage sehr viel Zeit zum
+ programmieren gefunden und habe  das Dxr3  Plugin komplett neu geschrieben. Im Moment arbeite ich am A/V sync, und sonst noch
+ ein paar Goodies.
+
+Hier mal ein kleiner Vorgeschmack:
+
+Feb 26 14:44:59 vdr vdr: [24405] initializing plugin: dxr3 (0.3.0_rc1): TODO
+ Feb 26 14:44:59 vdr vdr: [24405] [dxr3-decoder] using avcodec/ffmpeg version 3352580 build 3352580
+ Feb 26 14:44:59 vdr vdr: [24405] [dxr3-interface] ready…
+ Feb 26 14:44:59 vdr vdr: [24405] ERROR: /dev/em8300_ma-0: Datei oder Verzeichnis nicht gefunden
+ Feb 26 14:44:59 vdr vdr: [24405] [dxr3-output-audio] using alsa driver
+ Feb 26 14:44:59 vdr vdr: [24405] [dxr3-interface] ioctl 1074021127 on 0 with result 0
+ Feb 26 14:44:59 vdr vdr: [24405] [dxr3-interface] ioctl 1074545410 on 0 with result 0
+ Feb 26 14:44:59 vdr vdr: [24405] [dxr3-interface] ioctl 1074021126 on 0 with result 0
+ Feb 26 14:44:59 vdr vdr: [24405] [dxr3-interface] ioctl 1074021137 on 0 with result 0
+ Feb 26 14:44:59 vdr vdr: [24405] [dxr3-interface] ioctl 1074021136 on 0 with result 0
+ Feb 26 14:44:59 vdr vdr: [24405] initializing plugin: live (0.1.0): Live Interactive VDR Environment
+ Feb 26 14:44:59 vdr vdr: [24405] setting primary device to 2
+ Feb 26 14:44:59 vdr vdr: [24412] Audio-Output Thread (dxr3) thread started (pid=24405, tid=24412)
+ Feb 26 14:44:59 vdr vdr: [24413] Video-Output Thread (dxr3) thread started (pid=24405, tid=24413)
+ Feb 26 14:44:59 vdr vdr: [24405] assuming manual start of VDR
+ Feb 26 14:44:59 vdr vdr: [24405] SVDRP listening on port 2001
+ Feb 26 14:44:59 vdr vdr: [24405] setting current skin to “sttng”
+ Feb 26 14:44:59 vdr vdr: [24405] loading /etc/vdr//themes/sttng-default.theme
+ Feb 26 14:44:59 vdr vdr: [24405] starting plugin: dxr3
+ Feb 26 14:44:59 vdr vdr: [24405] starting plugin: live
+ Feb 26 14:44:59 vdr vdr: [24405] LIVE: initial file cache has 82 entries and needs 300358 bytes of data!
+ Feb 26 14:44:59 vdr vdr: [24416] KBD remote control thread started (pid=24405, tid=24416)
+ Feb 26 14:44:59 vdr vdr: [24405] remote control KBD – learning keys
+ Feb 26 14:44:59 vdr vdr: [24405] ERROR: no OSD provider available – using dummy OSD!
+ Feb 26 14:45:01 vdr vdr: [24409] CAM 1: no module present
+ Feb 26 14:45:09 vdr vdr: [24405] switching to channel 2
+ Feb 26 14:45:09 vdr vdr: [24424] transfer thread started (pid=24405, tid=24424)
+ Feb 26 14:45:09 vdr vdr: [24425] receiver on device 1 thread started (pid=24405, tid=24425)
+ Feb 26 14:45:09 vdr vdr: [24426] TS buffer on device 1 thread started (pid=24405, tid=24426)
+ Feb 26 14:45:09 vdr vdr: [24405] ERROR: no OSD provider available – using dummy OSD!
+ Feb 26 14:45:09 vdr vdr: [24405] live reloading timers
+ Feb 26 14:45:10 vdr vdr: [24413] [dxr3-output] starting
+ Feb 26 14:45:10 vdr vdr: [24424] setting audio track to 1 (0)
+ Feb 26 14:45:10 vdr vdr: [24424] [dxr3-audio-alsa] switching to analog audio
+ Feb 26 14:45:10 vdr vdr: [24412] [dxr3-output] starting
+ Feb 26 14:45:10 vdr vdr: [24412] [dxr-audio-alsa] changing samplerate to 48000 (old 0)
+ Feb 26 14:45:10 vdr vdr: [24412] [dxr-audio-alsa] changing num of channels to 2 (old 0)

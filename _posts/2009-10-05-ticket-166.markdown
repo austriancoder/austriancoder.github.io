@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Ticket #166'
+date: '2009-10-05 15:28:08'
+---
+
+
+Im Moment bin ich dabei [diesen Bugrepor](http://projects.vdr-developer.org/issues/show/166)t zu fixen und habe auch schon herausgefunden, was falsch läuft.
+ Nun bin ich soweit, dass ich alle Areas des OSD auch probiere auszugeben. Und zwar encode ich im Moment
+ jede Area und schreibe die Daten an das SPU-Subdevice. Nun dachte ich mir, dass die anzeigten OSD-Teile auch so lange
+ angezeigt werden, bis ich das OSD von Hand cleane. Doch dies scheint leider nicht zu funktionieren. Im Moment
+ flackern alle Areas eines OSD auf dem TV… sprich beim Schreiben einer Area, wird das bereits angezeigte OSD gelöscht.
+ Mal schauen, ob ich das einfach fixen kann… ansonsten wird es schwieriger….
+
+Stay tuned

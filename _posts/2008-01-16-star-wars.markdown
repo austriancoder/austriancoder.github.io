@@ -1,0 +1,9 @@
+---
+layout: post
+title: Star Wars...
+date: '2008-01-16 14:10:55'
+---
+
+
+Welcher Star Wars-Fan und Geek wollte nich nie Star Wars ala Ascii-Art sehen?!
+ So einfach funktioniert es: telnet towel.blinkenlights.nl

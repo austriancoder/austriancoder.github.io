@@ -1,0 +1,31 @@
+---
+layout: post
+title: EBNF
+date: '2007-11-28 02:02:27'
+---
+
+
+Für das Seminar “Konzepte konkreter und abstrakter Maschinen” habe ich einen kleinen [EBNF](http://de.wikipedia.org/wiki/Erweiterte_Backus-Naur-Form "EBNF@Wikipedia")-Parser geschrieben, der die Korrektheit der EBNF-Syntax prüft und die Regeln verdeutscht. Der Parser wurde in Java innerhalb von kapp 2 Stunden entwickelt…
+
+> digit = ‘0’|’1’|’2′.
+>  hexdigit = digit|’A’|’B’|’C’|’D’|’E’|’F’.
+>  vorzeichen = ‘-‘|’+’.
+>  zahl = [vorzeichen] hexdigit {hexdigit}.
+
+Wird zu:
+
+> digit = ‘0’ oder ‘1’ oder ‘2’
+>  hexdigit = ‘digit’ oder ‘A’ oder ‘B’ oder ‘C’ oder ‘D’ oder ‘E’ oder ‘F’
+>  vorzeichen = ‘-‘ oder ‘+’
+>  zahl = entweder leer oder gleich ‘vorzeichen’ ‘hexdigit’ keinem, einem, oder mehreren ‘hexdigit’
+>  EBNF check ok
+
+Zweites Beispiel mit Fehler…
+
+> digit = ‘0’|’1’|’2′.
+>  hexdigit = zahl|’A’|’B’|’C’|’D’|’E’|’F’.
+
+wird zu…
+
+> digit = ‘0’ oder ‘1’ oder ‘2’
+>  hexdigit = EBNF-Error: ‘zahl’ not defined – at line 2
