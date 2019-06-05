@@ -28,6 +28,7 @@ author: Christian Gmeiner
 navbar-links:
   Bugfixing Service: "bugfixing"
   Impressum: "impressum"
+  Privacy Policy: "privacypolicy"
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
