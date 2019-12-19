@@ -1,0 +1,50 @@
+---
+layout: post
+title: Mainline kernel boot with STM32MP157C-DK2 Discovery Board
+date: '2019-12-19 21:05:00'
+tags:
+- stm32
+- u-boot
+- TF-A
+---
+
+I recently bought a new device for my etnaviv board farm - [STM32MP157C-DK2 Discovery Board](https://www.st.com/en/evaluation-tools/stm32mp157c-dk2.html).
+
+The big problem is that the stock boot-chain can not boot a mainline kernel - it simply hangs.
+
+### TF-A
+
+Trusted Firmware-A (TF-A) is a reference implementation of secure-world software used on this platform. It implements a secure monitor with various interface standards:
+
+* The power state coordination interface (PSCI)
+* Trusted board boot requirements (TBBR)
+* SMC calling convention
+* System control and management interface
+
+More information can be found at the official website at [https://www.trustedfirmware.org/](https://www.trustedfirmware.org/).
+
+On kernel side when you need to access to secure feature (like clocks, resets ...) you need to discuss it with this secure monitor using secure APIs. This APIs have not yet been pushed to mainline kernel. So It means that a mainline kernel can't access to secure resources and it is the reason for the boot hang.
+
+### u-boot - the solution
+
+It looks like that we can replace the current secure boot chain with u-boot in non-secure boot mode and call it a day.
+
+<script src="https://gist.github.com/austriancoder/5a78abf53c4c0b575d710ba2440dc901.js"></script>
+
+This will generate two build artifacts:
+* u-boot-spl.stm32
+* u-boot.img
+
+Lets copy these artifacts with dd directly to the suitable partition. ST has a quite nice wiki where we can find some more [details](https://wiki.st.com/stm32mpu/wiki/STM32MP15_TF-A#Update_via_SDCARD).
+
+
+* u-boot-spl.stm32 -> fsbl1
+* u-boot.img -> ssbl
+
+### Lets boot it ...
+
+Connect all your cables and have a look at you serial console:
+<script src="https://gist.github.com/austriancoder/4b6ea334925e3069d8e8a168034eb097.js"></script>
+
+And from there you can simply boot your mainline kernel:
+<script src="https://gist.github.com/austriancoder/3fa6756c6bda400089102f4a9cdb0fc7.js"></script>
